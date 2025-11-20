@@ -9,7 +9,7 @@
     requireConfig: "ignored",
     platform: "github",
     repositories: [
-        "gonicus/gonnect"
+        "peuter/gonnect"
     ],
     prConcurrentLimit: 0,
     prHourlyLimit: 5,
@@ -25,7 +25,7 @@
         }
     ],
     enabledManagers: [
-        "github-actions", "custom.regex"
+        "github-actions", "custom.regex", "conan"
     ],
     customManagers: [
         {
