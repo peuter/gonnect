@@ -104,7 +104,9 @@ jobs:
           run: cmake --build --preset conan-release
 
         - name: Package
-          run: cd build && cpack ${{github.workspace}}
+          run: |
+            brew install makensis
+            cd build && cpack ${{github.workspace}}
 
         - name: Check
           shell: bash
