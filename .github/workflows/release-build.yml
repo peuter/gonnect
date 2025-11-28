@@ -41,7 +41,7 @@ jobs:
         id: var
         with:
           script: |
-            core.setOutput('gonnect_version', '${{ github.ref }}'.replace("refs/tags/v", "");
+            core.setOutput('gonnect_version', '${{ github.ref }}'.replace("refs/tags/v", ""));
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
