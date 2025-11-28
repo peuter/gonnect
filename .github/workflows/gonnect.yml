@@ -74,6 +74,8 @@ jobs:
       - name: Configure CMake
         shell: cmd
         run: cmake --preset conan-default
+        env:
+          NSIS_USE_FAST_COMPRESSION: "1"
 
       - name: Build
         run: cmake --build --preset conan-release
