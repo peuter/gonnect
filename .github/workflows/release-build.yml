@@ -47,8 +47,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: GOnnect.flatpak
-          asset_name: GOnnect-$tag.flatpak
-          tag: ${{ steps.var.outputs.gonnect_version  }}
+          asset_name: GOnnect-${{ steps.var.outputs.gonnect_version }}.flatpak
           overwrite: trues
 
   build-windows:
